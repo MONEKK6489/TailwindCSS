@@ -1,9 +1,9 @@
 import { HeadlessListInferencer } from "@refinedev/inferencer/headless";
 import { GetServerSideProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-
-export default function CategoryList() {
-  return <HeadlessListInferencer />;
+import { History } from "@components/showtable/list";
+export default function MakeDataList() {
+  return <History />;
 }
 
 export const getServerSideProps: GetServerSideProps<{}> = async (context) => {
